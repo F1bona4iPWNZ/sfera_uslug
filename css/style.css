@@ -37,20 +37,42 @@ line-height: 36px;
 background-color: #ffc222;
 padding: 5px 20px 4px 50px;
 font-size: 18px;
-
+position: relative;/* 1 шаг:задаем,чтобы отображались иконки нормально*/
+}
+.header_btn:before{/*используется для иконок*/
+    content: "\f0b1";
+    font-family: 'icomoon';
+    position: absolute;/* 2шаг: тоже нужно задать для отображения*/
+    left: 22px;
+    color: #5e5e5e;
 }
 .header_phone, 
 .header_email{
 color: #bdbcbc;
 letter-spacing: 0.25px;
 line-height: 45px;
+position: relative;
 }
 .header_phone{
 padding-left: 20px;
 padding-right: 30px;
 }
+.header_phone:before{
+    content: "\f095";
+    font-family: 'icomoon';
+    position: absolute;
+    left: 0;
+    color: #ffc222;
+}
 .header_email{
 padding-left: 24px;
+}
+.header_email::before{
+    content: "\f003";
+    font-family: 'icomoon';
+    position: absolute;
+    left: 0;
+    color: #ffc222; 
 }
 .header_contacts::after{
 content: "";
@@ -81,4 +103,14 @@ justify-content: space-between;
 
 .menu li+li{
     padding-left: 10px;
+}
+#modal{/*  используется для вызова бесплатной консультации при использовании сайта fancybox*/
+    display: none;
+}
+.slider{
+    background-image: url(../img/slider_fon.jpeg);
+    background-repeat: no-repeat;/* чтобы картинка не повторялась*/
+    background-size: cover;/* не расстягивалась*/
+    background-position:center;
+    min-height: 500px;
 }
