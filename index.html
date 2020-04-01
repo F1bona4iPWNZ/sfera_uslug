@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-    <link href="https://fonts.googleapis.com/css?family=PT+Serif|Roboto:400,500,700&display=swap&subset=cyrillic"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif|Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
+ <!-- <link rel="stylesheet" href="css/jquery.formstyler.theme.css">-->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -20,7 +22,8 @@
                 <div class="header_contacts">
                     <a class="header_phone" href="tel:30963092145">+38 (096) 309 21 45</a>
                     <a class="header_email" href="#">layout585@gmail.com</a>
-                    <a <a data-fancybox data-src="#modal" href="javascript:;" class="header_btn" href="#">Бесплатная консультация</a>
+                    <a data-fancybox data-src="#modal" href="javascript:;" class="header_btn" href="#">Бесплатная
+                        консультация</a>
                 </div>
             </div>
         </div>
@@ -46,39 +49,199 @@
     </header>
     <section class="slider">
         <div class="container">
-            <div class="slider_inner">
+            <div class="slider_container">
                 <div class="slider_item">
-                    <div class="slider_title">
-                        КОМПЛЕКСНОЕ ЗАКРЫТИЕ ПРЕДПРИЯТИЯ
-                    </div>
-                    <div class="slider_text">
-                        Полное прекращение существования юридического лица с сохранением легальности всей предыдущей деятельности.
-                    </div>
-                    <div class="slider_button">
-                        Оставить заявку
-                    </div>
-                </div><div class="slider_item">
-                    <div class="slider_title">
-                        КОМПЛЕКСНОЕ ЗАКРЫТИЕ ПРЕДПРИЯТИЯ
-                    </div>
-                    <div class="slider_text">
-                        Полное прекращение существования юридического лица с сохранением легальности всей предыдущей деятельности.
-                    </div>
-                    <div class="slider_button">
-                        Оставить заявку
-                    </div>
-                </div><div class="slider_item">
-                    <div class="slider_title">
-                        КОМПЛЕКСНОЕ ЗАКРЫТИЕ ПРЕДПРИЯТИЯ
-                    </div>
-                    <div class="slider_text">
-                        Полное прекращение существования юридического лица с сохранением легальности всей предыдущей деятельности.
-                    </div>
-                    <div class="slider_button">
-                        Оставить заявку
+                    <div class="slider_item_content">
+                        <div class="slider_title">
+                            КОМПЛЕКСНОЕ ЗАКРЫТИЕ ПРЕДПРИЯТИЯ
+                        </div>
+                        <div class="slider_text">
+                            Полное прекращение существования юридического лица с сохранением легальности всей предыдущей
+                            деятельности.
+                        </div>
+                        <a data-fancybox data-src="#modal" href="javascript:;" class="slider_button default_btn">
+                            Оставить заявку
+                        </a>
                     </div>
                 </div>
+                <div class="slider_item">
+                    <div class="slider_item_content">
+                        <div class="slider_title">
+                            КОМПЛЕКСНОЕ ЗАКРЫТИЕ ПРЕДПРИЯТИЯ
+                        </div>
+                        <div class="slider_text">
+                            Полное прекращение существования юридического лица с сохранением легальности всей предыдущей
+                            деятельности.
+                        </div>
+                        <a data-fancybox data-src="#modal" href="javascript:;" class="slider_button default_btn">
+                            Оставить заявку
+                        </a>
+                    </div>
+                </div>
+                <div class="slider_item">
+                    <div class="slider_item_content">
+                        <div class="slider_title">
+                            КОМПЛЕКСНОЕ ЗАКРЫТИЕ ПРЕДПРИЯТИЯ
+                        </div>
+                        <div class="slider_text">
+                            Полное прекращение существования юридического лица с сохранением легальности всей предыдущей
+                            деятельности.
+                        </div>
+                        <a data-fancybox data-src="#modal" href="javascript:;" class="slider_button default_btn">
+                            Оставить заявку
+                        </a>
+                    </div>
+                </div>
+            </div>
 
+        </div>
+        </div>
+    </section>
+    <section class="services">
+        <div class="container">
+            <div class="services_top">
+                <div class="services_title-box">
+                    <div class="services-title">
+                        Наши Услуги
+                    </div>
+                    <div class="services-text">
+                        Комплексный подход к вашему вопросу, своевременную правовую помощь, представление интересов во
+                        всех судебных инстанциях.
+                    </div>
+                </div>
+                <div class="services-button">
+                    <a href="#">
+                        Показать все услуги
+                    </a>
+                </div>
+            </div>
+            <div class="services_items">
+                <div class="services_item">
+                    <img src="img/about1.png" alt="logo-about">
+                    <div class="services_item-title">
+                        Банкротство и ликвидация
+                    </div>
+                    <div class="services_item-info">
+                        Полное прекращение существования юридического лица с сохранением легальности всей предыдущей
+                        деятельности
+                    </div>
+                    <div class="services_item-btn">
+                        <a href="#" class="services_item-link">
+                            Подробнее
+                        </a>
+                        <a data-fancybox data-src="#modal" href="javascript:;" class="slider_button default_btn">
+                            Заказать
+                        </a>
+                    </div>
+                </div>
+                <div class="services_item">
+                    <img src="img/about2.png" alt="logo-about">
+                    <div class="services_item-title">
+                        Адвокатское сопровождение
+                    </div>
+                    <div class="services_item-info">
+                        Мы гарантируем полное профессиональное обслуживание клиентов в заявленных сферах деятельности и
+                        соблюдение
+                        конфиденциальности.
+                        <div class="services_item-btn">
+                            <a href="#" class="services_item-link">
+                                Подробнее
+                            </a>
+                            <a data-fancybox data-src="#modal" href="javascript:;" class="slider_button default_btn">
+                                Заказать
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="services_item">
+                    <img src="img/about3.png" alt="logo-about">
+                    <div class="services_item-title">
+                        Налоговый аудит
+                    </div>
+                    <div class="services_item-info">
+                        Налоговый аудит проводят перед проведением налоговых проверок; при оценке возможных
+                        налоговых рисков; при оптимизации налогообложения.
+                        <div class="services_item-btn">
+                            <a href="#" class="services_item-link">
+                                Подробнее
+                            </a>
+                            <a data-fancybox data-src="#modal" href="javascript:;" class="slider_button default_btn">
+                                Заказать
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="about">
+        <div class="container_about">
+            <div class="about_inner">
+                <div class="about_title">
+                    О компании
+                </div>
+                <div class="about_text">
+                    Компания специализируется на оказании услуг в сфере корпоративного права, налогового консалтинга,
+                    представительства в судах, ликвидации и банкротства предприятий. На сегодняшний день, коллектив
+                    компании объединяет
+                    высокопрофессиональных экспертов имеющих
+                    специализации в отдельных областях права.
+                </div>
+                <a href="#" class="about_button default_btn">
+                    Узнать больше
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="form">
+        <div class="container">
+            <div class="form_inner">
+                <div class="form_content">
+                    <div class="form_title-box">
+                        <div class="form-title">
+                            Получить консультацию
+                        </div>
+                        <div class="form-text">
+                            Комплексный подход к вашему вопросу, своевременную правовую помощь, представление интересов во
+                            всех судебных инстанциях.
+                        </div>
+                    </div>
+                    <div class="form_box">
+                        <form>
+                            <div class="form_box-inner">
+                                <div class="form_box-left">
+                                    <label>
+                                        E-mail
+                                        <input type="text">
+                                    </label>
+                                    <label>
+                                        Контактный телефон
+                                        <input type="text">
+                                    </label>
+                                    <label>
+                                        ФИО
+                                        <input type="text">
+                                    </label>
+                                    <label>
+                                        Тема вопроса
+                                         <select >
+                                             <option>------</option>
+                                             <option>-----</option>
+                                             <option>-----</option>
+                                             <option>------</option>
+                                         </select>
+                                    </label>
+                                </div>
+                                <div class="form_box-right">
+                                    <label>
+                                      Сообщение
+                                        <textarea></textarea>
+                                    </label>
+                                    <button class="default_btn" type="submit">Получить консультацию</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -104,6 +267,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
     </script>
     <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
