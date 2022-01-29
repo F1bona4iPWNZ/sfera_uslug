@@ -1,6 +1,10 @@
 *{
     box-sizing: border-box;
 }
+body{
+    max-width: 1520px;
+}
+
 a {
     text-decoration: none;
     display: inline-block;
@@ -12,9 +16,9 @@ li{
     padding: 0;
 }
 .container{
-    max-width: 1170px;
+   
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0;
 }
 body{
     /*font-family: 'Roboto', sans-serif;*/
@@ -35,7 +39,7 @@ color: rgba(50, 50, 50, 255);
 text-align: left;
 line-height: 36px;
 background-color: #ffc222;
-padding: 5px 20px 4px 50px;
+padding: 5px 50px 4px 50px;
 font-size: 18px;
 position: relative;/* 1 шаг:задаем,чтобы отображались иконки нормально*/
 }
@@ -63,6 +67,7 @@ padding-right: 30px;
     position: absolute;
     left: 0;
     color: #ffc222;
+    padding-left: 5px;
 }
 .header_email{
 padding-left: 24px;
@@ -90,6 +95,9 @@ justify-content: space-between;
 transform: scale(1.1);
 transition-duration: 1s;
 transition-property: all;
+}
+.menu{
+    margin-right: 10px;
 }
 .menu li{
     display: inline-block;
@@ -208,6 +216,9 @@ transition-property: all;
 .services{
     padding: 50px 0px 30px;
     font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .services_top{
     display: flex;
@@ -253,11 +264,11 @@ opacity: 1.3;
 
 }
 .services_items{
-    display: flex;
-    justify-content: space-between;
+   display: flex; 
 }
 .services_item{
-    max-width: 360px;
+    max-width: initial;
+    margin: 8px;
     text-align: center;
     padding: 30px 0px 80px;
     position: relative;
@@ -338,7 +349,6 @@ opacity: 1.3;
     background-position: bottom right;
 }
 .form_box{
-    min-width: 850px;
     padding: 45px;
 }
 .form_box-inner{
@@ -406,7 +416,7 @@ opacity: 1.3;
     float: right;
 }
 footer{
-    height: 120px;
+    height: 130px;
     color:#ccc;
     font-size:12px;
 
@@ -419,15 +429,6 @@ footer{
     background-image:-moz-linear-gradient(top, #31353a, #2f3337);
     background-image:linear-gradient(top, #31353a, #2f3337);
 }
-footer > ul{
-    width:960px;
-    position:relative;
-    left:50%;
-    bottom:0;
-    margin-left:-480px;
-    padding-bottom: 60px;
-    
-}
 footer > ul > li{
     width:25%;
     float:left;
@@ -436,7 +437,6 @@ footer > ul > li{
 footer ul{
     list-style: none;
     padding-top: 11px;
-    text-align: revert;
 }
 
 /* The links */
