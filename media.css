@@ -82,6 +82,10 @@
 }
 }
 @media (max-width: 848px){
+  .menu{
+    display: flex;
+    flex-direction: row-reverse;
+  }
   .slider_container button {
     display: none !important;
   }
@@ -143,9 +147,7 @@
   .menu ul{
     display: none;
     position: absolute;
-    left: 0;
-    right: 0;
-    margin-top: 20px;
+    margin-top: 50px;
     z-index: 50;
 }
 .menu li{
@@ -157,7 +159,7 @@
 }
 
 .menu li+li{
-  margin-left: -20px;
+  
 }
 .company_name{
   display: none;
